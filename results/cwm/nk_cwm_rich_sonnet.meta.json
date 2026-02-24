@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-12T19:48:51.792842",
+  "model": "claude-sonnet-4-20250514",
+  "trajectories": "results/trajectories/nk_trajectories.json",
+  "attempts": 1,
+  "n": 50,
+  "K": 2,
+  "prompt_type": "rich_empirical"
+}

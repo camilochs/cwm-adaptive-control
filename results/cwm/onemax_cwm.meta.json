@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-02-06T16:29:49.580978",
+  "model": "claude-sonnet-4-20250514",
+  "trajectories": "results/trajectories/om_trajectories.json",
+  "attempts": 1,
+  "n": 50
+}

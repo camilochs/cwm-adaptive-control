@@ -1,0 +1,176 @@
+{
+  "experiment": "exp21_jump_math_plus_empirical",
+  "timestamp": "2026-02-16T23:42:07.833139",
+  "parameters": {
+    "n": 50,
+    "jump_k": 2,
+    "budget": 10000,
+    "eval_episodes": 100,
+    "model": "claude-sonnet-4-20250514",
+    "synthesis_attempts": 2
+  },
+  "collection_policies": [
+    "random",
+    "static_1",
+    "sqrt",
+    "decreasing"
+  ],
+  "excluded_policies": [
+    "static_jump_k",
+    "stagnation_detect"
+  ],
+  "prompt_type": "math_plus_empirical",
+  "cwm_quality": {
+    "mean_tau": 0.8976463887264994,
+    "mean_rho": 0.94774984010184,
+    "valley_edge_tau": 1.0
+  },
+  "evaluation": {
+    "optimal": {
+      "mean": 1345.9,
+      "std": 1311.378431269937,
+      "median": 939.5,
+      "success_rate": 100.0
+    },
+    "CWM-greedy": {
+      "mean": 1341.79,
+      "std": 1328.4299025165008,
+      "median": 1003.0,
+      "success_rate": 100.0
+    },
+    "RLS_1": {
+      "mean": 10000.0,
+      "std": 0.0,
+      "median": 10000.0,
+      "success_rate": 0.0
+    },
+    "RLS_jump_k": {
+      "mean": 5225.67,
+      "std": 4175.776792538126,
+      "median": 2820.5,
+      "success_rate": 57.99999999999999
+    },
+    "random_k": {
+      "mean": 9522.02,
+      "std": 1404.318959353608,
+      "median": 10000.0,
+      "success_rate": 15.0
+    },
+    "EA_alpha(2,0.5)": {
+      "mean": 10000.0,
+      "std": 0.0,
+      "median": 10000.0,
+      "success_rate": 0.0
+    },
+    "EA_alpha(1.3,0.75)": {
+      "mean": 10000.0,
+      "std": 0.0,
+      "median": 10000.0,
+      "success_rate": 0.0
+    },
+    "stagnation": {
+      "mean": 1506.39,
+      "std": 1426.6312059884292,
+      "median": 1194.0,
+      "success_rate": 99.0
+    }
+  },
+  "generalization": {
+    "jk2_CWM-greedy": {
+      "jump_k": 2,
+      "policy": "CWM-greedy",
+      "budget": 10000,
+      "mean_steps": 1165.04,
+      "std_steps": 893.9180042934587,
+      "convergence_rate": 1.0
+    },
+    "jk2_optimal": {
+      "jump_k": 2,
+      "policy": "optimal",
+      "budget": 10000,
+      "mean_steps": 1399.84,
+      "std_steps": 1096.2176856810877,
+      "convergence_rate": 1.0
+    },
+    "jk2_stagnation": {
+      "jump_k": 2,
+      "policy": "stagnation",
+      "budget": 10000,
+      "mean_steps": 1266.72,
+      "std_steps": 1044.2043868898463,
+      "convergence_rate": 1.0
+    },
+    "jk2_EA_alpha": {
+      "jump_k": 2,
+      "policy": "EA_alpha",
+      "budget": 10000,
+      "mean_steps": 10000.0,
+      "std_steps": 0.0,
+      "convergence_rate": 0.0
+    },
+    "jk3_CWM-greedy": {
+      "jump_k": 3,
+      "policy": "CWM-greedy",
+      "budget": 50000,
+      "mean_steps": 21377.24,
+      "std_steps": 17966.431276756106,
+      "convergence_rate": 0.78
+    },
+    "jk3_optimal": {
+      "jump_k": 3,
+      "policy": "optimal",
+      "budget": 50000,
+      "mean_steps": 21389.9,
+      "std_steps": 16175.73598727427,
+      "convergence_rate": 0.88
+    },
+    "jk3_stagnation": {
+      "jump_k": 3,
+      "policy": "stagnation",
+      "budget": 50000,
+      "mean_steps": 18488.4,
+      "std_steps": 14052.874187154739,
+      "convergence_rate": 0.96
+    },
+    "jk3_EA_alpha": {
+      "jump_k": 3,
+      "policy": "EA_alpha",
+      "budget": 50000,
+      "mean_steps": 50000.0,
+      "std_steps": 0.0,
+      "convergence_rate": 0.0
+    },
+    "jk4_CWM-greedy": {
+      "jump_k": 4,
+      "policy": "CWM-greedy",
+      "budget": 50000,
+      "mean_steps": 50000.0,
+      "std_steps": 0.0,
+      "convergence_rate": 0.0
+    },
+    "jk4_optimal": {
+      "jump_k": 4,
+      "policy": "optimal",
+      "budget": 50000,
+      "mean_steps": 45509.02,
+      "std_steps": 12130.181997793768,
+      "convergence_rate": 0.16
+    },
+    "jk4_stagnation": {
+      "jump_k": 4,
+      "policy": "stagnation",
+      "budget": 50000,
+      "mean_steps": 42514.9,
+      "std_steps": 14486.088306026579,
+      "convergence_rate": 0.24
+    },
+    "jk4_EA_alpha": {
+      "jump_k": 4,
+      "policy": "EA_alpha",
+      "budget": 50000,
+      "mean_steps": 50000.0,
+      "std_steps": 0.0,
+      "convergence_rate": 0.0
+    }
+  }
+}
